@@ -4,30 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sinan Sarikaya" />
+    <meta name="description" content="Javascript background change app" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Background Change App</title>
   </head>
   <body>
     <div class="container">
       <input type="color" name="color" onchange="handleChange()" id="color" />
     </div>
-
-    <script>
-      let containerColor = document.querySelector(".container");
-
-      const handleChange = () => {
-        let colors = document.getElementById("color").value;
-        containerColor.style.backgroundColor = colors;
-        localStorage.setItem("bgColor", colors);
-        return colors;
-      };
-      if (localStorage.getItem("bgColor")) {
-        containerColor.style.backgroundColor = localStorage.getItem("bgColor");
-      } else {
-        localStorage.setItem("bgColor", "#b94b4b");
-        containerColor.style.backgroundColor = localStorage.getItem("bgColor");
-      }
-      document.getElementById("color").value = localStorage.getItem("bgColor");
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
