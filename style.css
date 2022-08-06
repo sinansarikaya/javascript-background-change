@@ -41,11 +41,9 @@ section input {
   background-color: none;
   height: 35px;
 }
-section .fa-github {
-  font-size: 30px;
-}
 section a {
   color: #b94b4b;
+  font-size: 30px;
 }
 section a:hover {
   color: #d49191;
@@ -67,13 +65,16 @@ footer {
   align-items: center;
   padding: 0 15px;
 }
-.fa-copy {
+.material-symbols-outlined {
   cursor: pointer;
+  margin-top: 2px;
+}
+.material-symbols-outlined:hover {
+  color: #b94b4b;
 }
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted rgb(88, 88, 88);
 }
 .tooltip .tooltiptext {
   visibility: hidden;
@@ -85,7 +86,7 @@ footer {
   padding: 5px 0;
   position: absolute;
   z-index: 1;
-  top: 200%;
+  top: 150%;
   left: 50%;
   margin-left: -100px;
 }
