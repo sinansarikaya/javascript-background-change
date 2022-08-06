@@ -8,10 +8,30 @@
     <meta name="description" content="Javascript background change app" />
     <link rel="stylesheet" href="style.css" />
     <title>Background Change App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container">
-      <input type="color" name="color" onchange="handleChange()" id="color" />
+      <section>
+        <span>Choose a color.</span>
+        <a href="https://github.com/sinansarikaya/javascript-background-change">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <input type="color" name="color" onchange="handleChange()" id="color" />
+      </section>
+      <footer>
+        <p id="colorHex"></p>
+
+        <div class="tooltip">
+          <i class="fa-solid fa-copy" onclick="handleClick()"> </i>
+          <span class="tooltiptext" onclick="changeText()"
+            >Copy to clipboard</span
+          >
+        </div>
+      </footer>
     </div>
     <script src="main.js"></script>
   </body>
