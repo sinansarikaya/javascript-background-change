@@ -20,24 +20,40 @@
   <body>
     <div class="container">
       <section>
-        <span>Choose a color.</span>
-        <a href="https://github.com/sinansarikaya/javascript-background-change">
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <input type="color" name="color" onchange="handleChange()" id="color" />
-      </section>
-      <footer>
-        <p id="colorHex"></p>
-
-        <div class="tooltip">
-          <span class="material-symbols-outlined" onclick="handleClick()">
-            content_copy
-          </span>
-          <span class="tooltiptext" onclick="changeText()"
-            >Copy to clipboard</span
+        <label for="color">Choose a color.</label>
+        <div class="middle-icons">
+          <a
+            href="https://github.com/sinansarikaya/javascript-background-change"
+            aria-label="Javascript background change app Github link"
           >
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <label for="imageInput">
+            <i class="fa-solid fa-camera"> </i>
+            <input
+              type="file"
+              id="imageInput"
+              onchange="handleImage()"
+              accept=".jpg, .jpeg, .png"
+            />
+          </label>
         </div>
-      </footer>
+
+        <input type="color" name="color" onchange="handleChange()" id="color" />
+        <footer>
+          <p id="colorHex"></p>
+
+          <div class="tooltip">
+            <span class="material-symbols-outlined" onclick="handleClick()">
+              content_copy
+            </span>
+            <span class="tooltiptext" onclick="changeText()"
+              >Copy to clipboard</span
+            >
+          </div>
+        </footer>
+      </section>
     </div>
     <script src="main.js"></script>
   </body>
