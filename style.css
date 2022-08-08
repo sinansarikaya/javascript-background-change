@@ -29,6 +29,9 @@ section {
   padding: 20px 0;
   border-radius: 15px;
 }
+section .title {
+  font-size: 18px;
+}
 .middle-icons {
   width: 80%;
   height: 50px;
