@@ -1,6 +1,6 @@
 # javascript-background-change
 
-Javascript background color change app
+Javascript background color or change app
 
 <a href='https://sinansarikaya.github.io/javascript-background-change/'>Click here for demo </a>
 
